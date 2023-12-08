@@ -16,10 +16,22 @@ body {
   background-color: #202D36;
   color: #fff;
 }
+
+/* ***** Header ***** */
+.header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+
+/* ***** Grid ***** */
 .grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
+  box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5);
 }
 
 
@@ -28,12 +40,12 @@ body {
   padding: 30px 20px;
   margin-top: -20px;
   border-radius: 0 0 5px 5px;
-  height: 157px;
+  /* height: 157px; */
 }
 article img{
   border-radius:5px 5px 0 0;
-  width: 360px;
-  height: 240px;
+  /* width: 360px;
+  height: 240px; */
 }
 
 .country-wrap{
@@ -68,6 +80,10 @@ article img{
 }
 
 @media (min-width: 992px){
+  body{
+    padding: 50px 100px;
+  }
+
   .grid{
     grid-template-columns: repeat(4, 1fr);
   }
