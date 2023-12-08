@@ -23,7 +23,7 @@ const Countries = () => {
             const{numericCode, name, population, region, capital, flag} = country
               return(
                 <article key={numericCode}>
-                  <div>
+                  <div className="country-wrap">
                     <img src={flag }alt={name} />
                     <div className="details">
                       <h3>{name}</h3>
