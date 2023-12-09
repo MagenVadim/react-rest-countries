@@ -111,16 +111,30 @@ article img{
 }
 
 @media (min-width: 768px){
+
+  .filter{
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .region-filter{
+    width: auto;
+  }
+
+  input{
+    width: 550px;
+    margin:0;
+  }
+
   .grid{
     grid-template-columns: repeat(3, 1fr);
   }
 }
 
 @media (min-width: 992px){
-  body{
-    padding: 50px 100px;
-  }
-
+.header, .filter, .grid{
+  padding: 20px;
+}
   .grid{
     grid-template-columns: repeat(4, 1fr);
   }
