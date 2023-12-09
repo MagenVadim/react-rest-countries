@@ -25,34 +25,34 @@ body {
 }
 
 
+/* ***** Filter ***** */
+.filter{
+ display: flex;
+ justify-content: space-between; 
+ margin: 20px 0 20px 0;
+}
+
+
 
 /* ***** Grid ***** */
 .grid{
   display: grid;
   grid-template-columns: 1fr;
   gap: 40px;
-  box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5);
 }
-
+article{
+  /* box-shadow: 0 10px 10px rgba(9, 17, 22, 0.5); */
+}
 
 .details{
   background-color: #2b3743;
   padding: 30px 20px;
   margin-top: -20px;
   border-radius: 0 0 5px 5px;
-  /* height: 157px; */
 }
 article img{
   border-radius:5px 5px 0 0;
-  /* width: 360px;
-  height: 240px; */
 }
-
-.country-wrap{
-  width: 360px;
-}
-
-
 
 
 .details h3{
