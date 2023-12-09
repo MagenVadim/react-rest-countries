@@ -12,7 +12,7 @@ img{
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  padding: 20px;
+  padding: 20px 0;
   background-color: #202D36;
   color: #fff;
 }
@@ -23,7 +23,7 @@ body {
   align-items: center;
   justify-content: space-between;
   background-color: #2b3743;
-  padding: 10px;
+  padding: 10px 0;
 }
 
 
@@ -33,7 +33,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: space-between; 
-  padding: 20px;
+  padding: 40px;
 }
 
 .form-control{
@@ -132,9 +132,16 @@ article img{
 }
 
 @media (min-width: 992px){
-.header, .filter, .grid{
-  padding: 20px;
+.header{
+  padding: 30px 70px;
 }
+.filter{
+  padding: 50px 70px;
+}
+.grid{
+  padding: 10px 70px;
+}
+
   .grid{
     grid-template-columns: repeat(4, 1fr);
   }
