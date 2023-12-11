@@ -35,8 +35,10 @@ const Countries = () => {
                       <h4>Population: <span>{population}</span> </h4>
                       <h4>Region: <span>{region}</span></h4>
                       <h4>Capital: <span>{capital}</span> </h4>  
-                      <Link to={`/countries/${name}`} className='btn'>Learn More</Link>
-                      <button className="btn" onClick={()=>removeCountry(numericCode)}>Remove Country</button>
+                      <div className="buttons">
+                        <Link to={`/countries/${name}`} className='btn'>Learn More</Link>
+                        <button className="btn" onClick={()=>removeCountry(numericCode)}>Remove Country</button>
+                      </div>
                     </div>
                   </div>
                 </article>

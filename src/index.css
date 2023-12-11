@@ -101,7 +101,6 @@ article img{
   border-radius:5px 5px 0 0;
 }
 
-
 .details h3{
   padding-bottom: 10px;
 }
@@ -112,6 +111,26 @@ article img{
   font-weight: 300;
 }
 
+.buttons{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.btn{
+  background-color: var(--dark-bg-color);
+  padding: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+  border: 2px solid var(--dark-bg-color);
+  border-radius: 4px;
+  transition: background-color .2s;
+}
+
+.btn:hover{
+  background-color: #fff;
+  color: var(--dark-bg-color);
+}
 
 
 @media (min-width: 640px){
