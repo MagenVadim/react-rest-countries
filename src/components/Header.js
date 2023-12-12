@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsFillMoonFill } from "react-icons/bs";
 
 const Header = () => {
   return (
@@ -8,7 +9,7 @@ const Header = () => {
           <h1>Where in the world ?</h1>
         </div>
         <div>
-          <i className="fas fa-moon"></i>Dark mode
+          <i className="fas fa-moon"></i> <BsFillMoonFill /> Dark mode
         </div>
         
       </header>

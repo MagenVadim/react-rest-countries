@@ -124,12 +124,23 @@ article img{
   color: #fff;
   border: 2px solid var(--dark-bg-color);
   border-radius: 4px;
-  transition: background-color .2s;
 }
 
 .btn:hover{
   background-color: #fff;
   color: var(--dark-bg-color);
+}
+
+.btn-light{
+  background-color: var(--article-color);
+  border: 2px solid var(--article-color);
+}
+span{
+
+}
+
+.fa-arrow-left{
+
 }
 
 
