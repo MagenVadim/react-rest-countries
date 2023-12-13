@@ -1,0 +1,50 @@
+.btn-link{
+    margin:20px 0;
+}
+.btn-light{
+    display: inline-block;
+    margin:20px 0;
+}
+
+.fa-arrow-left{
+   padding: 20px;
+}
+.country{
+    padding: 50px 50px;
+}
+article{
+    display: flex;
+    flex-direction: column;
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.main-details{
+    margin: 30px 0;
+}
+.main-details h2{
+    font-weight: 600;
+    font-size: 30px;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+h5{
+    font-weight: 600;
+    font-size: 16px;
+    margin: 10px 0;
+}
+h5 span{
+    font-weight: 300;
+}
+.bottom-details{
+    margin-bottom: 30px;
+}
+h3{
+    margin: 0 10px;
+    background-color: var(--article-color);
+}
+li{
+    list-style-type: none  
+}

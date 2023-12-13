@@ -14,11 +14,11 @@ function App() {
     <Header/>  
 
     <Routes>
-      <Route exact path='/' element={<Filter/>}/>
+      <Route path='' element={<Filter/>}/>
     </Routes>
 
     <Routes>
-      <Route exact path='/' element={<Countries/>}/>      
+      <Route path='' element={<Countries/>}/>      
     </Routes>
 
     <Routes>
