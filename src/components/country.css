@@ -1,22 +1,18 @@
-.btn-link{
-    margin:20px 0;
-}
 .btn-light{
     display: inline-block;
-    margin:20px 0;
+    margin: 10px 0;
 }
 
 .fa-arrow-left{
    padding: 20px;
 }
 .country{
-    padding: 50px 50px;
+    padding: 30px 50px;
 }
 article{
     display: flex;
     flex-direction: column;
-    margin-top: 70px;
-    display: flex;
+    margin-top: 30px;
     justify-content: space-between;
 }
 
@@ -41,10 +37,64 @@ h5 span{
 .bottom-details{
     margin-bottom: 30px;
 }
+
 h3{
-    margin: 0 10px;
-    background-color: var(--article-color);
+    font-weight: 600;
+}
+ul{
+    display: flex;
+    list-style-type: none  
 }
 li{
-    list-style-type: none  
+    margin: 10px;
+    background-color: var(--article-color);
+    padding: 3px 20px;
+    border-radius: 3px;
+    box-shadow: 0 5px 20px hsl(200, 15%, 8%, .5);
+}
+
+@media (min-width: 992px){
+    article{
+        height: 600px;
+        display: flex;
+        flex-direction: row;
+        justify-content:flex-start;
+        gap: 200px;
+    }
+    .flag img{
+        min-height: 600px;
+        width: 800px;
+    }
+    .main-details{
+        margin: 0 0 30px 0;
+    }
+    .data-block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 100px 0;
+    }
+    h2{
+        font-size: 42px;
+        margin-bottom: 60px;
+    }
+    h3{
+        margin-right: 20px;
+    }
+    .country-inner{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .country-details{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .borders{
+        margin: 100px 0;
+        display: flex;
+        align-items: center;
+    }
 }
