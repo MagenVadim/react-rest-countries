@@ -27,7 +27,7 @@ const Country = () => {
       </div>
 
       {country.map((c)=>{
-        const {numericCode, flag, name, nativeName, population, region, subRegion, capital, topLevelDomain, currencies, languages, borders} = c
+        const {numericCode, flag, name, nativeName, population, region, subregion, capital, topLevelDomain, currencies, languages, borders} = c
         return(
           <article key={numericCode}>
 
@@ -45,7 +45,7 @@ const Country = () => {
                     <h5>Native Name: <span>{nativeName}</span></h5>
                     <h5>Population: <span>{population}</span></h5>
                     <h5>Region: <span>{region}</span></h5>
-                    <h5>Sub Region: <span>{subRegion}</span></h5>
+                    <h5>Sub Region: <span>{subregion}</span></h5>
                     <h5>Capital: <span>{capital}</span></h5>
                   </div>
 
@@ -59,7 +59,7 @@ const Country = () => {
                 <div className="borders">
                     <h3>Border Countries: </h3>
                     <ul>
-                      {borders.map((border)=>{return(                      
+                      {borders && borders.map((border)=>{return(                      
                             <li key={border}>{border} </li>)
                       })}
                     </ul>

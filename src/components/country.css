@@ -1,10 +1,13 @@
 .btn-light{
-    display: inline-block;
-    margin: 10px 0;
+    display: inline-block; 
+    margin: 30px 0;   
 }
 
 .fa-arrow-left{
-   padding: 20px;
+   padding: 0 10px;
+   display: flex;
+   align-items: center;
+   gap: 10px;
 }
 .country{
     padding: 30px 50px;
@@ -12,10 +15,12 @@
 article{
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin: 30px 0;
     justify-content: space-between;
 }
-
+.data-block{
+    margin-top: 100px;
+}
 
 .main-details{
     margin: 30px 0;
@@ -54,13 +59,23 @@ li{
 }
 
 @media (min-width: 992px){
-    article{
+    .btn-light{
+        margin: 10px 0 0 100px;
+    }
+
+    .grid article{
+        margin: 10px 20px 0 20px;
+    }
+
+    .country article{
         height: 600px;
         display: flex;
         flex-direction: row;
         justify-content:flex-start;
         gap: 200px;
+        margin: 30px 100px 0 100px;
     }
+
     .flag img{
         min-height: 600px;
         width: 800px;
@@ -91,6 +106,7 @@ li{
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        gap: 150px;
     }
     .borders{
         margin: 100px 0;

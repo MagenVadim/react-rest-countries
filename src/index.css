@@ -6,7 +6,7 @@
   --text-color: hsl(0, 0%, 100%);
   --light-mode-text: hsl(200, 15%, 8%);
   --light-mode-input: hsl(0, 0%, 52%);
-  --light-mode-background: hsl(0, 0%, 98%);
+  --light-mode-background: hsl(0, 2%, 84%);
 
 }
 
@@ -22,10 +22,14 @@ img{
 
 body {
   font-family: 'Nunito Sans', sans-serif;
-  padding: 20px 0;
   background-color: #202D36;
   color: #fff;
 }
+body.light-theme{
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+
 
 /* ***** Header ***** */
 .header{
@@ -34,6 +38,18 @@ body {
   justify-content: space-between;
   background-color: #2b3743;
   padding: 10px 0;
+}
+header.light-theme{
+  background-color: #fff;
+  color: var(--light-mode-text);
+}
+
+.fa-moon{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;  
 }
 
 
@@ -80,11 +96,21 @@ input::placeholder{
   border-radius: 5px;
 }
 
+#search.light-theme, .select.light-theme{
+  background-color: #fff;
+  color: var(--light-mode-text);
+}
+
+input.light-theme::placeholder{
+  color: var(--light-mode-text);
+}
+
+
 /* ***** Grid ***** */
 .grid{
   display: grid;
   grid-template-columns: 1fr;
-  gap: 40px;
+  gap: 30px 80px;
   padding: 20px;
 }
 article{
@@ -169,13 +195,11 @@ article img{
   padding: 30px 70px;
 }
 .filter{
-  padding: 50px 70px;
+  padding: 20px 70px;
 }
 .grid{
-  padding: 10px 70px;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 0 50px;
 }
 
-  .grid{
-    grid-template-columns: repeat(4, 1fr);
-  }
 }
