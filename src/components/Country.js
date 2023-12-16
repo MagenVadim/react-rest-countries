@@ -60,7 +60,7 @@ const Country = () => {
                     <h3>Border Countries: </h3>
                     <ul>
                       {borders && borders.map((border)=>{return(                      
-                            <li key={border}>{border} </li>)
+                            <li key={border} className="border-li">{border} </li>)
                       })}
                     </ul>
                   </div>

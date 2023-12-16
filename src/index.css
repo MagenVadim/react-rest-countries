@@ -101,6 +101,11 @@ input::placeholder{
   color: var(--light-mode-text);
 }
 
+.country-wrap .details.light-theme{
+  background-color: #fff;
+  color: var(--light-mode-text);
+}
+
 input.light-theme::placeholder{
   color: var(--light-mode-text);
 }
@@ -141,6 +146,7 @@ article img{
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-top: 10px;
 }
 .btn{
   background-color: var(--dark-bg-color);
@@ -150,7 +156,14 @@ article img{
   color: #fff;
   border: 2px solid var(--dark-bg-color);
   border-radius: 4px;
+  font-family: "Nunito Sans";
+  font-size:13px;
 }
+.btn.light-theme{
+  background-color: var(--light-mode-background);
+  color: var(--light-mode-text);
+}
+
 
 .btn:hover{
   background-color: #fff;

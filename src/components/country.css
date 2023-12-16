@@ -50,12 +50,16 @@ ul{
     display: flex;
     list-style-type: none  
 }
-li{
+.border-li{
     margin: 10px;
     background-color: var(--article-color);
     padding: 3px 20px;
     border-radius: 3px;
     box-shadow: 0 5px 20px hsl(200, 15%, 8%, .5);
+}
+.border-li.light-theme{
+    background-color: #fff;
+    color: var(--light-mode-text);
 }
 
 @media (min-width: 992px){
